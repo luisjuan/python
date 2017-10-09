@@ -1,10 +1,12 @@
-# SayMyName.py
-
-# Ask the user for their name
-name = input("What is your name? ")
-
-# Print their name 100 times
-for x in range(100):
-    
-    # Print their name followed by a space, not a new line
-    print(name, end = " rules! ")
+#NiceHexSpiral.py
+import turtle   
+colors=['red', 'purple', 'blue',
+        'green', 'yellow', 'orange']
+t=turtle.Pen()
+t.speed(0)
+turtle.bgcolor('black')
+for x in range(360):
+    t.pencolor(colors[x%6])
+    t.width(x/100+1)
+    t.forward(x)        
+    t.left(59)
